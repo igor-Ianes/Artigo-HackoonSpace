@@ -9,11 +9,9 @@ Nesse contexto, a Transformada de Fourier destaca-se como uma das ferramentas ma
 Diante desse cenário, este artigo tem como objetivo apresentar os fundamentos da Transformada de Fourier aplicados à análise de áudio digital, estabelecendo a relação entre conceitos de processamento de sinais e aplicações musicais. Inicialmente, são discutidos os princípios físicos do som, sua representação digital e os fundamentos da Transformada de Fourier e da Transformada Rápida de Fourier (FFT). Em seguida, na segunda etapa do trabalho, será apresentada uma implementação computacional capaz de analisar arquivos de áudio e identificar suas frequências predominantes, demonstrando, na prática, como computadores podem "ouvir" e interpretar informações musicais.
 Diante desse cenário, este artigo tem como objetivo apresentar os fundamentos da Transformada de Fourier aplicados à análise de áudio digital, estabelecendo a relação entre conceitos de processamento de sinais e aplicações musicais. Inicialmente, são discutidos os princípios físicos do som, sua representação digital e os fundamentos da Transformada de Fourier e da Transformada Rápida de Fourier (FFT).
 
-Por fim, na segunda etapa do trabalho, será apresentada uma implementação computacional capaz de analisar arquivos de áudio e identificar suas frequências predominantes, demonstrando, na prática, como computadores podem "ouvir" e interpretar informações musicais. Dessa forma, busca-se integrar os fundamentos teóricos e a implementação computacional, evidenciando a importância da Transformada de Fourier no processamento digital de sinais de áudio.
-
 ## No mundo fisico
 
-## O Som e as Ondas Sonoras
+### O Som e as Ondas Sonoras
 O som é um fenômeno físico produzido pela propagação de vibrações mecânicas em um meio material, como o ar, a água ou sólidos. Quando um instrumento musical é tocado ou uma pessoa fala, ocorre a vibração de um corpo, provocando variações de pressão que se propagam pelo meio na forma de ondas sonoras. Essas ondas transportam energia e, ao alcançarem o ouvido humano, são interpretadas pelo cérebro como diferentes sons.
 
 As ondas sonoras podem ser descritas por diversas características físicas, sendo as mais importantes a frequência, a amplitude e o período. A frequência corresponde ao número de oscilações realizadas pela onda em um segundo e é medida em hertz (Hz). Essa grandeza está diretamente relacionada à percepção da altura do som: frequências mais elevadas são percebidas como sons agudos, enquanto frequências menores produzem sons graves. A amplitude representa a intensidade da vibração da onda e está associada ao volume percebido pelo ouvinte, enquanto o período corresponde ao tempo necessário para que uma oscilação completa seja realizada.
@@ -22,7 +20,7 @@ Na música, cada nota possui uma frequência fundamental característica. Como e
 
 Embora o sistema auditivo humano consiga distinguir naturalmente essas diferentes componentes sonoras, os computadores não interpretam o áudio da mesma maneira. Para um sistema computacional, um som é representado inicialmente apenas como uma sequência de valores numéricos que descrevem a variação da amplitude ao longo do tempo. Dessa forma, torna-se necessário utilizar técnicas matemáticas capazes de identificar as frequências presentes nesse sinal, permitindo sua análise e processamento, tema que será abordado nas próximas seções.
 
-## Representação Digital do Áudio
+### Representação Digital do Áudio
 Embora o som seja um fenômeno contínuo no mundo físico, os computadores somente conseguem processar informações em formato digital. Dessa forma, para que um sinal sonoro possa ser armazenado, analisado ou reproduzido por um sistema computacional, é necessário convertê-lo em uma sequência de valores numéricos por meio de um processo denominado digitalização do áudio.
 
 A digitalização é realizada principalmente por duas etapas: a amostragem e a quantização. A amostragem consiste na captura periódica dos valores de amplitude do sinal analógico em intervalos de tempo regulares. O número de amostras coletadas por segundo é denominado taxa de amostragem e é medido em hertz (Hz). Quanto maior essa taxa, maior será a capacidade de representar fielmente o sinal original. Um exemplo bastante conhecido é o padrão utilizado em CDs de áudio, que emprega uma taxa de amostragem de 44.100 Hz, permitindo registrar frequências dentro da faixa audível pelo ser humano.
@@ -33,7 +31,7 @@ Esses dados podem ser armazenados em diferentes formatos de arquivo de áudio. E
 
 Uma vez representado digitalmente, o sinal de áudio pode ser submetido a diferentes técnicas de processamento. Entre elas, destaca-se a Transformada de Fourier, capaz de converter a representação do sinal no domínio do tempo para o domínio da frequência, permitindo identificar as componentes espectrais que caracterizam o conteúdo musical analisado.
 
-## Transformada de Fourier
+### Transformada de Fourier
 Após a digitalização, o sinal de áudio passa a ser representado por uma sequência de amostras que descrevem sua variação ao longo do tempo. Embora essa representação seja suficiente para armazenar e reproduzir o som, ela não permite identificar de forma direta quais frequências compõem o sinal. Para realizar essa análise, utiliza-se a Transformada de Fourier, uma das ferramentas matemáticas mais importantes do Processamento Digital de Sinais.
 
 A Transformada de Fourier consiste em um método capaz de converter um sinal do domínio do tempo para o domínio da frequência. Enquanto no domínio do tempo é possível observar apenas como a amplitude do sinal varia ao longo dos instantes, no domínio da frequência torna-se possível identificar quais componentes espectrais estão presentes e qual a intensidade de cada uma delas.
@@ -48,6 +46,7 @@ No contexto deste trabalho, a Transformada de Fourier representa o principal mec
 
 
 ## Aplicações da Transformada de Fourier na Música
+
 
 ## Referências
 
