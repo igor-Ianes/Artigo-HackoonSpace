@@ -52,7 +52,7 @@ No contexto deste trabalho, a Transformada de Fourier representa o principal mec
 
 ## Referências
 
-1. [Fundamental of music processing - https://www.audiolabs](https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/04_bookFMP/02_slides/Mueller_FMP_Preface.pdf)
+1. [Fundamental of music processing - audiolabs](https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/04_bookFMP/02_slides/Mueller_FMP_Preface.pdf)
    
 2. [Identification and Analysis of Instrument Frequencies in Monophonic Music Based on FFT](https://dl.acm.org/doi/10.1145/3784013.3784045?__cf_chl_f_tk=BmoLl9memGZjwB.Lmh9CI6Ava_UvmjeU6m0ptQK7t9w-1783352165-1.0.1.1-0vqSEPitmUX_d.cekhBffcSZg34sdWVBQm9wXGdQnPs)
   
