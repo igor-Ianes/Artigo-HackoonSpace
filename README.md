@@ -51,27 +51,22 @@ No contexto deste trabalho, a Transformada de Fourier representa o principal mec
 
 ## Referências
 
-COOLEY, James W.; TUKEY, John W. An algorithm for the machine calculation of complex Fourier series. Mathematics of Computation, v. 19, n. 90, p. 297-301, 1965. 
-
-RAO, K. R.; KIM, Do Nyeon; HWANG, Jae Jeong. Fast Fourier Transform: algorithms and applications. Nova York: Springer, 2010.
-
-BRACEWELL, Ronald N. The Fourier transform and its applications. 3. ed. Boston: McGraw-Hill, 2000. 
-
-STEWART, James. Cálculo: volume 2. 8. ed. São Paulo: Cengage Learning, 2016. 
-
-Fundamental of music processing - https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/04_bookFMP/02_slides/Mueller_FMP_Preface.pdf
-
-Identification and Analysis of Instrument Frequencies in Monophonic Music Based on FFT - https://dl.acm.org/doi/10.1145/3784013.3784045?__cf_chl_f_tk=BmoLl9memGZjwB.Lmh9CI6Ava_UvmjeU6m0ptQK7t9w-1783352165-1.0.1.1-0vqSEPitmUX_d.cekhBffcSZg34sdWVBQm9wXGdQnPs
-
-Transformada de Fourier de Curto Prazo Explicada Facilmente - https://www.youtube.com/watch?v=-Yxj3yfvY-4&t=1148
-
-everything you need to know about fourier transform  | towards data science - https://towardsdatascience.com/everything-you-need-to-know-about-fourier-transform/
-
-Transformada rapida de Fourier - https://en.wikipedia.org/wiki/Fast_Fourier_transform
-
-O que é a transformada de Fourier: But what is the Fourier Transform? A visual introduction. - https://www.youtube.com/watch?v=spUNpyF58BY
-
-Transformada de Fourier - wikipedia.	URL: https://en.wikipedia.org/wiki/Fourier_transform
-
-
-
+1. [Fundamental of music processing - https://www.audiolabs](https://www.audiolabs-erlangen.de/content/05_fau/professor/00_mueller/04_bookFMP/02_slides/Mueller_FMP_Preface.pdf)
+   
+2. [Identification and Analysis of Instrument Frequencies in Monophonic Music Based on FFT](https://dl.acm.org/doi/10.1145/3784013.3784045?__cf_chl_f_tk=BmoLl9memGZjwB.Lmh9CI6Ava_UvmjeU6m0ptQK7t9w-1783352165-1.0.1.1-0vqSEPitmUX_d.cekhBffcSZg34sdWVBQm9wXGdQnPs)
+  
+3. [Transformada de Fourier de Curto Prazo Explicada Facilmente - Youtube](https://www.youtube.com/watch?v=-Yxj3yfvY-4&t=1148)
+   
+4. [everything you need to know about fourier transform  | towards data science](https://towardsdatascience.com/everything-you-need-to-know-about-fourier-transform/)
+   
+5. [Transformada rapida de Fourier - Wikipedia](https://en.wikipedia.org/wiki/Fast_Fourier_transform)
+    
+6. [But what is the Fourier Transform? A visual introduction.](https://www.youtube.com/watch?v=spUNpyF58BY
+)
+7. [COOLEY, James W.; TUKEY, John W. An algorithm for the machine calculation of complex Fourier series. Mathematics of Computation, v. 19, n. 90, p. 297-301, 1965.](https://web.stanford.edu/class/cme324/classics/cooley-tukey.pdf)
+    
+8. [RAO, K. R.; KIM, Do Nyeon; HWANG, Jae Jeong. Fast Fourier Transform: algorithms and applications. Nova York: Springer, 2010.](https://www.researchgate.net/publication/392265666_Fourier_Transforms_Fourier_Series_and_the_FFT_Algorithm)
+    
+9. [BRACEWELL, Ronald N. The Fourier transform and its applications. 3. ed. Boston: McGraw-Hill, 2000.](https://scispace.com/pdf/the-fourier-transform-and-its-applications-iursr090ke.pdf)
+    
+10. [STEWART, James. Cálculo: volume 2. 8. ed. São Paulo: Cengage Learning, 2016.](https://www.stewartcalculus.com/)
