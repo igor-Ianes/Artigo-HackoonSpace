@@ -20,6 +20,8 @@ As ondas sonoras podem ser descritas por diversas características físicas, sen
 
 Na música, cada nota possui uma frequência fundamental característica. Como exemplo, a nota Lá da quarta oitava (A4), utilizada como referência para afinação de instrumentos musicais, possui frequência de 440 Hz. Entretanto, instrumentos diferentes podem produzir essa mesma nota apresentando características sonoras distintas. Isso ocorre porque, além da frequência fundamental, o som produzido é composto por diversas frequências adicionais, conhecidas como harmônicos, cuja combinação determina o timbre característico de cada instrumento.
 
+ ![Ilustração das ondas de cada instrumento](Assets/imagem1.png)
+
 Embora o sistema auditivo humano consiga distinguir naturalmente essas diferentes componentes sonoras, os computadores não interpretam o áudio da mesma maneira. Para um sistema computacional, um som é representado inicialmente apenas como uma sequência de valores numéricos que descrevem a variação da amplitude ao longo do tempo. Dessa forma, torna-se necessário utilizar técnicas matemáticas capazes de identificar as frequências presentes nesse sinal, permitindo sua análise e processamento, tema que será abordado nas próximas seções.
 
 ### Representação Digital do Áudio
@@ -27,11 +29,15 @@ Embora o som seja um fenômeno contínuo no mundo físico, os computadores somen
 
 A digitalização é realizada principalmente por duas etapas: a amostragem e a quantização. A amostragem consiste na captura periódica dos valores de amplitude do sinal analógico em intervalos de tempo regulares. O número de amostras coletadas por segundo é denominado taxa de amostragem e é medido em hertz (Hz). Quanto maior essa taxa, maior será a capacidade de representar fielmente o sinal original. Um exemplo bastante conhecido é o padrão utilizado em CDs de áudio, que emprega uma taxa de amostragem de 44.100 Hz, permitindo registrar frequências dentro da faixa audível pelo ser humano.
 
+ ![Conversão analogico para digital](Assets/imagem2.jpg)
+
 Após a amostragem, cada valor obtido passa pelo processo de quantização, no qual a amplitude do sinal é convertida para um valor discreto representável digitalmente. O conjunto dessas amostras forma uma sequência numérica que descreve a variação da amplitude do sinal ao longo do tempo. Para o computador, portanto, uma música não é inicialmente composta por notas musicais ou instrumentos, mas sim por milhares de valores organizados em sequência.
 
 Esses dados podem ser armazenados em diferentes formatos de arquivo de áudio. Entre eles, destaca-se o formato WAV, amplamente utilizado em aplicações de processamento digital de sinais por armazenar o áudio sem perdas de qualidade decorrentes de compressão. Essa característica preserva as informações originais do sinal, tornando-o adequado para análises espectrais e experimentos computacionais.
 
 Uma vez representado digitalmente, o sinal de áudio pode ser submetido a diferentes técnicas de processamento. Entre elas, destaca-se a Transformada de Fourier, capaz de converter a representação do sinal no domínio do tempo para o domínio da frequência, permitindo identificar as componentes espectrais que caracterizam o conteúdo musical analisado.
+
+ ![Processo de discretização](Assets/imagem3.png)
 
 ### Transformada de Fourier
 Após a digitalização, o sinal de áudio passa a ser representado por uma sequência de amostras que descrevem sua variação ao longo do tempo. Embora essa representação seja suficiente para armazenar e reproduzir o som, ela não permite identificar de forma direta quais frequências compõem o sinal. Para realizar essa análise, utiliza-se a Transformada de Fourier, uma das ferramentas matemáticas mais importantes do Processamento Digital de Sinais.
@@ -42,13 +48,24 @@ De forma intuitiva, a Transformada de Fourier pode ser compreendida como um proc
 
 Essa mudança de representação é fundamental para diversas aplicações computacionais. Ao identificar as frequências presentes em um sinal, torna-se possível reconhecer notas musicais, analisar timbres, remover ruídos, aplicar filtros, desenvolver equalizadores e implementar sistemas capazes de identificar músicas ou comandos de voz. Em vez de trabalhar apenas com uma sequência de valores numéricos, o computador passa a interpretar as características espectrais do áudio, tornando sua análise significativamente mais eficiente.
 
+ ![Combinação de ondas simples](Assets/imagem4.png)
+
 No contexto deste trabalho, a Transformada de Fourier representa o principal mecanismo utilizado para extrair informações musicais de sinais digitalizados. Sua aplicação permitirá, na etapa prática da pesquisa, identificar as frequências predominantes presentes em arquivos de áudio e relacioná-las às respectivas notas musicais, demonstrando como computadores podem analisar e interpretar sinais sonoros de maneira automatizada.
 
-## Transformada Rápida de Fourier (FFT)
+## A Equação da Transformada Discreta de Fourier (DFT) 
 
+Do ponto de vista estritamente matemático, a transição do sinal de áudio do domínio do tempo para o domínio da frequência baseia-se na Transformada Discreta de Fourier (DFT). Dado um sinal digital composto por uma sequência finita de N amostras discretas, denotadas por X[N], onde n representa o índice do instante de tempo (n=0,1, . . .,N-1), a componente de frequência X[K] para cada índice de frequência k é calculada por meio da equação:
+
+![Combinação de ondas simples](Assets/imagem5.png)
+
+Nessa formulação, X[K] representa o valor complexo do espectro, cujo módulo (amplitude) indica a intensidade daquela frequência específica no sinal de áudio, enquanto X[N] corresponde à amplitude da amostra no instante discretizado N. A base exponencial complexa que se decompõe em funções de cosseno e seno através da Identidade de Euler cumpre o papel de correlacionar o sinal original com ondas senoidais puras, operando sob a unidade imaginária j=-1 . Esse formalismo traduz numericamente o processo de decomposição espectral ao varrer as amostras digitais e extrair a contribuição de cada componente de frequência isolada. Contudo, a aplicação direta dessa equação exige um custo computacional de ordem O(N2) operações, o que introduz limitações severas para o processamento em tempo real e motiva a necessidade de técnicas de otimização algorítmica na etapa prática da pesquisa, como a Transformada Rápida de Fourier (FFT).
+
+
+## Transformada Rápida de Fourier (FFT)
+[Nota: Esta seção será integralmente desenvolvida e apresentada na etapa final do projeto, conforme detalhado no cronograma metodológico]. 
 
 ## Aplicações da Transformada de Fourier na Música
-
+[Nota: Esta seção será integralmente desenvolvida e apresentada na etapa final do projeto, conforme detalhado no cronograma metodológico]. 
 
 ## Referências
 
